@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class AreaEx
+{
+public static void main(String [] args)
+{
+Scanner scanner = new Scanner (System.in);
+System.out.println("Enter the length");
+int len= scanner.nextInt();
+System.out.println("Enter the breath");
+int bre=scanner.nextInt();
+int a= len*bre;
+System.out.println("the area of the rectangle is "+a);
+}
+}
