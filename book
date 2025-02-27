@@ -1,18 +1,25 @@
 class Book {
-    String title;
-    String author;
-    public static Books(String title,String author);
+    String title="the reformation";
+    String author="o.henry";
+    public Book()
+   {
+   System.out.println("title:"+title);
+   System.out.println("author:"+author);
+   }
+    public Book(String mytitle,String myauthor);
     {
-        this.title=title;
-        this.author=author;
-        System.out.print(title);
-        System.out.print(author);
+        this.title=mytitle;
+        this.author=myauthor;
+        System.out.print("title"+mytitle);
+        System.out.print("author"+myauthor);
         
     }
     public static void main(String[] args) {
         Book b1=new Books();
         
-        Book b2=Books("the reformation","o.Henry");
+        Book a=new Book();
+        Book b=new Book("the reformation","o.Henry");
+         Book c=new Book("hello world","abc");
         
         
         
