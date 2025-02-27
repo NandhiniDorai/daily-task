@@ -15,8 +15,6 @@ class Book {
         
     }
     public static void main(String[] args) {
-        Book b1=new Books();
-        
         Book a=new Book();
         Book b=new Book("the reformation","o.Henry");
          Book c=new Book("hello world","abc");
