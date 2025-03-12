@@ -1,0 +1,62 @@
+///member inner class
+class Parent
+{
+  void display()
+  {
+   System.out.println("Message");
+  }
+  class Child
+  {
+    void show ()
+    {
+      System.out.println("method child");
+  }
+  }
+  public static void main(String[]args)
+{
+  Parent p=new Parent();
+  p.display();
+  Parent.Child c=p.new Child();
+  c.show();
+}
+}
+///static inner class
+class Parent
+{
+  void display()
+  {
+   System.out.println("Message");
+  }
+  static class Child
+  {
+    void show ()
+    {
+      System.out.println("method child");
+  }
+  }
+  public static void main(String[]args)
+{
+  Parent p=new Parent();
+  p.display();
+  Parent.Child c=new Parent.Child();
+  c.show();
+}
+}
+///local class
+class Dragon {
+    void safe() {
+        
+        class Lion {
+            void fire() {
+                System.out.print("have a blast");
+            }
+        }
+        Lion l = new Lion(); 
+        l.fire(); 
+    }
+
+    public static void main(String[] args) {
+        Dragon d = new Dragon(); 
+        d.safe();
+    }
+}
