@@ -1,0 +1,54 @@
+//day 6
+class Computer
+{
+    void display()
+    {
+       System.out.println("Message");
+    }
+    class Processor
+    {
+        void show()
+        {
+            class Keyboard
+            {
+                void here()
+                {
+                
+                System.out.print("abc");
+            }
+            }
+        
+        Keyboard k=new Keyboard();
+        k.here();
+        }
+    }
+    public static void main (String[] args) {
+        Computer c=new Computer();
+        c.display();
+        Processor p=c.new Processor();
+        p.show();
+        
+    }
+}
+// anonymous class
+class Day6
+{
+    void show()
+    {
+        System.out.println("runnable interface");
+    }
+}
+    public class Day5 implements Day6
+    {
+     public static void main (String[] args) {
+         Day5 d= new Day5()
+         {
+             void show();
+             {
+                System.out.println("user interface");
+             }
+         ;
+    }
+
+     
+    
